@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+     <title>oracle</title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <style>
+        html{
+          font-size: 16px;
+        }
+        h1{
+          font-size: 3rem;
+       
+        }
+        h2{
+         font-size: 2.4em
+        }
+        h3{
+          font-size: 1.8rem;
+        }
+        h4{
+          font-size: 1.1rem;
+        }
+        p{
+          font-size: 2.4rem;
+          font-size: 1rem;
+        }
+        a{
+          color: black !important;
+        }
+        nav{
+          background-color:#F2F0DA !important;
+     
+        }
+        .side-nav{
+          background-color: black !important;
+         
+        }
+        .side-nav li a{
+          color:white !important;
+        }
+      
+        @media screen and (max-width:800px) {
+          html{
+          font-size: 13px;
+        }
+        }
+        
+        @media screen and (max-width:700px) {
+             .nav-content li{
+             padding:0px !important;
+              font-size: 11px;
+                   }
+           .nav-content li a{
+            padding:0px !important;
+           font-size: 11px;
+                     }
+      }
+        @media screen and (min-width:1000px) {
+        .nav-content{
+          padding-right: 5%;
+             }
+        .nav-content ul {
+          display:flex;
+          flex-direction: row-reverse;
+                }
+        .brand-logo{
+          
+          margin:25px 0 0 80px;
+           }
+     }
+        a:hover{
+           color:tomato !important;
+            }
+            @media screen and (max-width:1050px) {
+            .mini-nav{
+              display:none;
+            }
+            }
+            @media screen and (min-width:1050px) {
+        .mini-nav{
+              margin-top:52px;
+              height:35px;
+              background-color:lightgrey;
+              position: sticky;
+              width:100%;
+            }
+        .mini-nav ul{
+          display:flex;
+          flex-direction: row;
+          padding-left:42%;
+          
+         
+        
+        }
+        .mini-nav ul li{
+          padding:6px;
+         
+        }
+        .mini-nav ul li a{
+          font-size: 14px;
+        }
+            }
+
+
+ .costumer-satis{
+                height:560px;
+              
+                background-image: url("images/blue.jpg");
+                background-size:100% 100%;
+                background-repeat: no-repeat center center fixed;
+                background-attachment: fixed;
+            
+              }
+            .cs-texts{
+            
+              padding:70px 0 0 10px;
+              color: whitesmoke;
+            }
+            .cs-logos{
+              display:grid;
+              grid-template-columns: 1fr 1fr;
+            
+            }
+            .sure {
+          
+              height:90%;
+              width:70%;
+              background-color: rgb(49, 49, 44);
+              display:flex;
+              justify-content: center;
+              flex-direction: column;
+              align-items: center;
+              margin: 20px 0 0 35px;
+
+              
+            }
+            .sure .material-icons{
+              padding-top: 10px;
+              font-size: 40px;
+            }
+            .trusted .material-icons{
+              padding-top: 5px;
+              font-size: 50px;
+            }
+            .sure h1{ 
+              color: orange;
+              margin-top: 7px;
+            }
+            .trusted h2{
+            color: orange;
+            margin-top: 1px;
+           
+         
+              
+            }
+            .sure p,.sure h4,.trusted p,.trusted h4{
+            color:whitesmoke;
+            margin-top:-12px;
+           
+              
+            }
+            .trusted{
+              height:90%;
+              width:70%;
+              display:flex;
+              justify-content: center;
+              flex-direction: column;
+              align-items: center;
+           
+              background-color: rgb(49, 49, 44);
+              margin-top: 20px;
+            }
+
+     @media screen and (min-width:1000px){
+            .costumer-satis{
+                height:530px;
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap:110px;
+                background-image: url("images/blue.jpg");
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            
+              }
+            .cs-texts{
+            
+              padding:70px 0 0 100px;
+              color: whitesmoke;
+            }
+            .cs-logos{
+              display:grid;
+              grid-template-columns: 1fr 1fr;
+            
+            }
+            .sure {
+          
+              height:50%;
+              width:65%;
+              background-color: rgb(49, 49, 44);
+              display:flex;
+              justify-content: center;
+              flex-direction: column;
+              align-items: center;
+              margin: 110px 0 0 75px;;
+
+              
+            }
+            .sure .material-icons{
+              padding-top: 1px;
+              font-size: 50px;
+            }
+            .trusted .material-icons{
+              padding-top: 5px;
+              font-size: 50px;
+            }
+            .sure h1{ 
+              color: orange;
+              margin-top: 15px;
+            }
+            .trusted h2{
+            color: orange;
+            margin-top: 1px;
+           
+         
+              
+            }
+            .sure p,.sure h4,.trusted p,.trusted h4{
+            color:whitesmoke;
+            margin-top:-12px;
+           
+              
+            }
+            .trusted{
+              height:50%;
+              width:65%;
+              display:flex;
+              justify-content: center;
+              flex-direction: column;
+              align-items: center;
+           
+              background-color: rgb(49, 49, 44);
+              margin-top: 110px;
+            }
+     }
+
+      .value-based{
+         height:250px;
+         background-color: whitesmoke;
+         margin-top: -26px;
+
+       }
+       .value-based h2{
+         padding-top:70px;
+       }
+
+     @media screen and (max-width:1049px){
+      .key-sucess{
+         height: 450px;
+       background-image:url("images/service-flow.jpeg");
+         background-size: 100% 100%;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+       }
+.sucess-texts{
+  padding:100px 10px 0 20px;
+}
+.sucess-team{
+         height: 400px;
+       
+         background-image:url("images/service-hand.jpg");
+         background-size: 100% 100%;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+       }
+.sucess-team-texts{
+  padding:100px 10px 0 20px;
+}
+.key-university{
+         height: 400px;
+         background-repeat: no-repeat;
+      
+         background-image:url("images/service-fuu.jpg");
+         background-size: 100% 100%;
+         background-attachment: fixed;
+       }
+.university-texts{
+  padding:100px 10px 0 20px;
+}
+.community{
+         height: 380px;
+         }
+.community-texts{
+  padding:80px 10px 0 20px;
+}
+.community-image{
+  display:none;
+}
+.layout-grid{
+
+}
+  .grid1{
+background-image: url("images/grid1.jpg");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    height:22rem;
+  }
+  .grid1 h4{
+    color:whitesmoke;
+    padding:50px 10px 0 20px;
+   
+  }
+  .grid2 h4,.grid3 h4{
+    color:black;
+    padding:50px 10px 0 20px;
+  }
+  .grid1 h3{
+    color:whitesmoke;
+    padding:0px 10px 0 20px;
+  }
+  .grid2 h3,.grid3 h3{
+    color:black;
+    padding:10px 10px 0 20px;
+  }
+  .grid2{
+    height:210px;
+    background-color:#4286f4;
+    margin:2px;
+  }
+  .grid3{
+    height:200px;
+    background-color:#fc6220;
+    }
+  .grid4{
+ height:210px;
+  background-image: url("images/grid4.jpg");
+  background-size:100% 100%;
+    background-repeat: no-repeat;
+    margin:5px;
+  }
+  .grid5{
+    height:210px;
+    background-image: url("images/grid5.jpg");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    margin:3px;
+    }
+
+  }
+     @media screen and (min-height:1050px){
+      
+       .key-sucess{
+         height: 500px;
+         display:grid;
+         grid-template-columns: 2fr 1.8fr;
+         background-image:url("images/service-flow.jpeg");
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+       }
+.sucess-texts{
+  padding:100px 120px 0 0;
+}
+.sucess-team{
+         height: 500px;
+         display:grid;
+         grid-template-columns: 1.7fr 2fr;
+         background-image:url("images/service-hand.jpg");
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+       }
+.sucess-team-texts{
+  padding:100px 0px 0 120px;
+}
+
+  .key-university{
+         height: 518px;
+         background-repeat: no-repeat;
+         display:grid;
+         grid-template-columns: 2fr 1.8fr;
+         background-image:url("images/service-fuu.jpg");
+         background-size: cover;
+         background-attachment: fixed;
+       }
+.university-texts{
+  padding:100px 120px 0 0;
+}
+
+.community{
+         height: 400px;
+         display:grid;
+         grid-template-columns: 1.7fr 2fr;
+     
+      
+       }
+.community-texts{
+  padding:80px 0px 0 120px;
+}
+.community-image{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.layout-grid{
+  height:430px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap:1.5px;
+}
+  .grid1{
+    grid-row:span 2;
+    
+    background-image: url("images/grid1.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+  .grid1 h4{
+    color:whitesmoke;
+    padding:180px 0 0 50px;
+  }
+  .grid2 h4,.grid3 h4{
+    color:black;
+    padding:10px 0 0 50px;
+  }
+  .grid1 h3{
+    color:whitesmoke;
+    padding:10px 0 0 50px;
+  }
+  .grid2 h3,.grid3 h3{
+    color:black;
+    padding:0px 0 0 40px;
+  }
+  .grid2{
+    
+    background-color:#4286f4
+  }
+  .grid3{
+  
+    background-color:#fc6220
+    }
+  .grid4{
+ 
+  background-image: url("images/grid4.jpg");
+  background-size:cover;
+    background-repeat: no-repeat;
+  }
+  .grid5{
+   
+    background-image: url("images/grid5.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    }
+     }
+
+ .footer{
+
+background-color:azure;
+}
+.footer1{
+
+padding: 25px 60px 15px 60px; 
+}
+
+
+
+
+.footer li{
+line-height: 1.8rem;
+}
+.heading{
+color:orange;
+}
+
+.footer2 ul{
+padding-left:30px;
+}
+.footer3{
+border:1px solid black;
+width:92%;
+height:2px;
+
+}
+.footer4 ul li{
+font-size:1rem;
+} 
+.footer4 ul{
+  padding-left:30px;
+}
+@media screen and (min-width:800px) {
+.footer{
+display:grid;
+grid-template-rows: 4fr 2fr 0.2fr 1fr ;
+height:600px;
+background-color:azure;
+}
+.footer1{
+display:grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr ;
+padding: 25px 60px 15px 60px; 
+}
+.footer2,.footer3,.footer4{
+
+
+}
+.foot1,.foot2,.foot3,.foot4,.foot5,.foot6{
+display: flex;
+justify-content: center;
+
+}
+.foot6 ul li ul{
+display:flex;
+}
+.footer li{
+line-height: 2.2rem;
+}
+.heading{
+color:orange;
+}
+.footer2{
+
+}
+.footer2 ul{
+display:flex;
+flex-flow: row;
+padding:0 45px 0 70px;
+}
+.footer2 ul li{
+padding:10px;
+}
+.footer3{
+border:1px solid black;
+width:92%;
+height:2px;
+margin-left:60px;
+}
+.footer4 ul{
+display:flex;
+flex-flow: row;
+padding:0 45px 0 70px;
+
+}
+.footer4 ul li{
+font-size:1rem;
+
+padding:15px;
+
+} 
+}
+
+
+
+          </style>
+  </head>
+  <body>
+    <div class="navbar-fixed">
+  <nav class="nav-extended">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+              
+           <li><a href="#test4">Services</a></li>
+              
+            <li><a href="#test4">Partners</a></li>
+            <li><a href="#test4">Costumers</a></li>
+            <li ><a href="#test3">Solutions</a></li>
+            <li ><a class="active" href="#test2">Products</a></li>
+            <li ><a href="#test1">Why Birst</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+              
+            <li ><a href="#test4">Services</a></li>
+              
+            <li ><a href="#test4">Partners</a></li>
+            <li><a href="#test4">Costumers</a></li>
+            <li ><a href="#test3">Solutions</a></li>
+            <li><a class="active" href="#test2">Products</a></li>
+            <li ><a href="#test1">Why Birst</a></li>
+          
+        </ul>
+      </div>
+         <div class="nav-content">
+          <ul class="tabs tabs-transparent">
+            <li class="tab"><a href="#">Blog</a></li>
+            <li class="tab"><a href="#">Learning</a></li>
+            <li class="tab"><a href="#">Company</a></li>
+            <li class="tab"><a href="#">Contact</a></li>
+            <li class="tab"><a href="#">Login</a></li>
+           </ul>
+          </div>
+       </nav>
+    </div>
+    <div class="mini-nav">
+      <ul>
+        <li><a href="#">Support</a></li>  <li><a href="#">Value-Based Design</a></li>  <li><a href="#"> 6 Keys to Success</a></li>
+          <li><a href="#">Customer Success Team</a></li> 
+         <li><a href="#">Birst University</a></li>
+      </ul>
+    </div>
+    <div class="costumer-satis">
+      <div class="cs-texts"><h2>Birst Customers are the <br>Happiest, Again</h2><h3>Why take an unnecessary risk?<br>Once again, Birst ranks
+         highest in customer satisfaction with key analyst firms.</h3><div class="button"><a class="waves-effect waves-light btn">Learn more</a></div></div>
+      <div class="cs-logos">
+        <div class="sure"><i class="material-icons">code</i><h1>100%</h1><center><h4>Customer <br>satisfaction</h4></center><p>Gartner group survey</p></div>
+        <div class="trusted"><i class="material-icons">code</i><center><h2>Most<br>Trusted</h2></center><center><h4>Across Mainstream <br>BI Solutions</h4></center>
+          <p>Trust Radius  survey</p></div>
+      </div>
+    </div>
+    <div class="value-based">
+      <center><h2>Value-Based Design</h2></center>
+      <center><h4>By focusing your deployment on driving your company’s critical Key Value Indicators, 
+        Birst’s Value-Based Design process ensures rapid initial<br>
+         implementation and continuous, recurring value from your business intelligence platform and implementation.
+
+      </h4></center>
+    </div>
+       <div class="key-sucess">
+       <div class="empty"></div>
+     <div class="sucess-texts">
+    <h2>“Big 6” Keys to Success</h2>
+     <p>Birst business intelligence services knows what it takes to
+          ensure the success of business-critical BI initiatives – and we have the highest success rates in the industry to prove it.</p>
+      <p>We proactively work with our customers to ensure their BI initiatives are supported by certain key elements. We call them
+          the “Big 6” – you’ll call them your blueprint for success.</p>
+    </div>
+</div>
+<div class="sucess-team">
+    
+  <div class="sucess-team-texts">
+ <h2>Customer Success Team</h2>
+  <p>Our dedicated customer success managers ensure best practice approaches to analytics, 
+    implementation success, customer advocacy and continuous account engagement.</p>
+   
+ </div>
+ <div class="empty"></div>
+</div>
+<div class="key-university">
+    <div class="empty"></div>
+  <div class="university-texts">
+ <h2>Birst University</h2>
+  <p>Education ensures that your team is enabled to develop and deliver game-changing 
+    analytics to your organization. Birst Education is available in-person and online with classes 
+    regularly scheduled in Europe, North America and Asia.</p>
+    <a class="waves-effect waves-light btn">Learn more</a>
+ </div>
+</div>
+<div class="community">
+
+    <div class="community-texts">
+        <h2>OUR COMMUNITY</h2>
+         <p>The Birst Community Think Tank is a place for Birst customers and partners to engage in
+            discussion forums across BI topics, exchange ideas, share blogs, and access official
+             knowledgebase articles authored by Birst experts.</p>
+             <p>Community members benefit from lively discussions, rich problem solving, and inspiring connections made with peers and experts.</p>
+          
+        </div>
+        <div class="community-image">logo </div>
+       </div>
+<div class="layout-grid">
+  <div class="grid1">
+    <h4>BUSINESS INTELLIGENCE GUIDE</h4>
+    <h3>The Forrester Wave™: <br>Cloud Business <br>Intelligence Platforms</h3>
+  </div>
+  <div class="grid2"><h4>ANALYST REPORT</h4>
+    <h3>Buyer's Guide for BI and Analytics</h3></div>
+  <div class="grid3"><h4>WEBINAR</h4>
+    <h3>The Five Essential Steps to Building a Data Product</h3></div>
+  <div class="grid4"></div>
+  <div class="grid5"></div>
+</div>
+<div class="footer">
+    <div class="footer1">
+    <div class="foot1"><ul>
+      <li class="heading">ABOUT US</li>
+      <li>Why oracle</li>
+      <li>cOntact</li>
+      <li>Company</li>
+      <li>Customer</li>
+      <li>Partner</li>
+      <li>Resource</li>
+      <li>Careear</li>
+      <li>News and Events</li>
+    </ul></div>
+    <div class="foot2"><ul>
+        <li class="heading">PRODUCT</li>
+        <li>User Data Tier <ul>
+         <li>User Experence</li>
+         <li>Multi-TEnant cloud experence</li>
+         <li>Professional edition</li>
+        
+  </div>
+    <div class="foot3"><ul>
+        <li class="heading">SOLUTION</li>
+        <li>Sale</li>
+        <li>Marketing</li>
+        <li>Supply Chain</li>
+        <li>Operation</li>
+        <li>Finance</li>
+        <li>  Enterprise</li>
+        <li>Big data</li>
+        <li>Embeded Analytic</li>
+      </ul></div>
+    <div class="foot4"><ul>
+        <li class="heading">SERVICES</li>
+        <li>Value based design</li>
+        <li>6 key to sucess</li>
+        <li>Costumer Sucess Team</li>
+        <li>Oracle University</li>
+     
+      </ul></div>
+    <div class="foot5"><ul>
+        <li class="heading">RESOURCES</li>
+        <li>Analyst Report</li>
+        <li>BI GUide</li>
+        <li>Solution Brief</li>
+        <li>eBook</li>
+        <li>Video</li>
+        <li>Demo</li>
+        <li>Webiner</li>
+        <li>White Paper</li>
+        <li>RFP Template</li>
+      </ul></div>
+    <div class="foot6">
+      <ul>
+        <li class="heading">FOLLOW US</li>
+        <li><ul><li>facebook</li><li>twitter</li><li>insta</li></ul></li>
+        <li>98547663889(within US)</li>
+        <li>+91-8855858232</li>
+        <li>info@oracle.com</li>
+      </ul>
+  </div>
+  </div>
+  <div class="footer2"><ul>
+    <li>TREANDING NOW :</li>
+    <li>Business Intellegent Software Product</li>
+    <li>BI Analyst Tools</li>
+    <li>Top Business Intellegent Vendore Compared</li>
+    <li>Embedded BI Platform</li>
+   <li>Buying BI Tools</li>
+   
+  </ul></div>
+  <div class="footer3"></div>
+    <div class="footer4">
+      <ul>
+        <li>© 2018 Birst, Inc. All rights reserved. </li>
+        <li>PRIVACY POLICY</li>
+        <li>TERMS OF SERVICE</li>
+        <li>SECURITY</li>
+        <li>COMMERCIAL TERMS</li>
+       <li>SITEMAP</li>
+       
+      </ul>
+    </div>
+
+  </div>
+
+
+
+       <!--Import jQuery before materialize.js-->
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+ <script>
+     $(document).ready(function(){
+    $(".button-collapse").sideNav();
+  });
+
+    </script>
+    </body>
+    </html>

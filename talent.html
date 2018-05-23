@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+     <title>oracle</title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <style>
+        html{
+          font-size: 16px;
+        }
+        h1{
+          font-size: 3rem;
+       
+        }
+        h2{
+         font-size: 2.4em
+        }
+        h3{
+          font-size: 1.8rem;
+        }
+        h4{
+          font-size: 1.3rem;
+        }
+        p{
+          font-size: 2.4rem;
+          font-size: 1rem;
+        }
+        a{
+          color: black !important;
+        }
+@media screen and (max-width:999px){
+      .navbar{
+          background-color: steelblue;
+        padding-bottom: 30px;
+        }
+        .nav{
+     
+     }
+
+        .navs1,.navs2,.navs3{
+       display:none;   
+        }
+        .brand-navs{
+        border-bottom: 2px solid whitesmoke;
+       text-align: center;
+     margin-top:-55px;
+            }
+            .navs-only{
+            display: none;
+       
+            }
+       .extra-navs{
+         display:none;
+       }
+       .nav-toogle:checked ~ .navi{
+      display:block;
+       }
+        
+        .big-text{
+          margin:90px 0 30px 50px;
+        }
+       .learn-more{
+        
+         margin:40px 30px 20px 20px;
+       }
+       .navi{
+       display:none;
+       position: absolute;
+       width:100%;
+       background-color: rgb(43, 37, 37);margin-top:25px;
+   
+         }
+         .navi li{
+           text-align: center
+         }
+         .navi li:hover{
+          background-color: black;
+          font-size:18px;
+         }
+         .navi li a{
+          color:whitesmoke !important;
+         }
+       label{
+      position:absolute;
+      margin:35px 15px 0 -20px;
+      color: navy;
+       }
+       input[type=checkbox]{
+         margin-top:-100px;
+         color:yellow !important;
+       }
+       .skill-set{
+      
+         margin-top:30px;
+         margin-bottom:50px;
+       }
+       .list1,.list2,.list3{
+         list-style-type: none;
+         margin-left:50px;
+       }
+       .skill-set ul li{
+         font-size: 1.2em;
+         padding:13px;
+         border-bottom:1px solid rgb(100, 98, 98);
+         width:85%;
+       }
+       .heading{
+         margin-left:50px;
+       }
+       .hr-solution{
+         height:450px;
+         background-image: url("images/service-hand.jpg");
+         background-size: 100% 100%;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+       }
+       .hr-solution h2{
+         padding:90px 0 0 20px;
+       }
+       .hr-solution h4{
+         padding:20px 0 0 20px;
+       }
+       .solution-button{
+         margin:40px 0 0 20px;
+       }
+       .it-solution{
+         height:400px;
+         background-image: url("images/service-man.jpg");
+         background-size:100% 100%;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         margin-top:-28px;
+        
+       }
+       .it-solution h2{
+         padding:50px 10px 0 50%;
+       }
+       .it-solution h4{
+         padding:10px 10px 0 50%;
+       }
+       .solution-button2{
+         margin:10px 10px 0 50%;
+       }
+       .find-location{
+         height:420px;
+         background-color: steelblue;
+        margin-top:-28px;
+       }
+       .find-location h2{
+         padding:40px 0 0px 60px;
+       }
+       .find-location h4{
+         padding:0px 0 0px 60px;
+       }
+       .selection-tool{
+         
+         margin:30px 30px 0 60px;
+       }
+      .select-it{
+        
+        height:70px;
+         margin-top:14px;
+        
+      }
+      .text-select{
+        width:90%;
+        border:1px solid rgb(201, 185, 185);
+        height: 50px;
+        background-color: whitesmoke;
+        margin:0px 0  5px 0px;
+      }
+      .browser-default{
+        height:50px;
+        width:90%;
+        margin:5px 0 5px 0 ;
+      }
+      .tool-button .btn{
+        height:50px;
+        background-color: whitesmoke;
+       width:90%;
+        margin:0 0 30px 0px;
+      }
+      .footer{
+
+background-color: rgb(12, 12, 68);
+
+}
+.footer1{
+
+padding: 25px 60px 15px 30px; 
+}
+.foot1,.foot2,.foot3,.foot4{
+
+color:white;
+}
+
+.footer li{
+line-height: 2.2rem;
+}
+.headings{
+color:orange;
+}
+.footer2{
+
+color:whitesmoke;
+}
+.footer2 ul{
+
+padding:0 45px 0 30px;
+}
+.footer2-logo{
+  margin: 20px 0 0 30px;
+}
+.footer2-text li a{
+ 
+  padding:0 5px 0 5px;
+  color:whitesmoke !important;
+}
+.footer2-text li{
+  padding:0 5px 0 5px ;
+}
+.footer2-social ul{
+  margin: 0px 0 0px 20px;
+  display:flex;
+}
+.footer2-social li a{
+ 
+  padding:0 5px 0 5px;
+  color:whitesmoke !important;
+}
+.footer2-social li{
+  padding:0 5px 0 5px ;
+}
+}
+        @media screen and (min-width:1000px) {
+        
+        .navbar{
+          background-color: steelblue;
+          height:630px;
+        }
+        .nav{
+          display:grid;
+          grid-template-columns: 3fr 1fr;
+         
+        }
+        .navs1,.navs2,.navs3{
+          list-style-type: none;
+          display: flex;
+          
+        }
+        .brand-navs{
+        border-bottom: 2px solid whitesmoke;
+       
+          display:flex;
+          margin:0px 0 0 50px;
+            }
+            .brand-navs h2{
+            
+            }
+            .navs-only{
+              border-bottom: 2px solid whitesmoke;
+              margin:0px 50px 0 0px;
+          display:flex;
+          align-items:center;
+       
+            }
+        .navs1{
+          margin-left:30px;
+        }
+        .navs1 li,.navs2 li,.navs3 li{
+          padding: 12px;
+        }
+        .bottom-navs,.extra-navs{
+          margin:0px 0 0 80px;
+        }
+        .big-text{
+          margin:100px 0 80px 80px;
+        }
+       .learn-more{
+         display:grid;
+         grid-template-columns: 3fr 1fr;
+         margin:10px 30px 0px 80px;
+       }
+       .navi{
+       display: none;
+        
+       }
+       .nav-toogle{
+      
+       }
+       label{
+      opacity:0;
+       }
+      
+       .skill-set{
+        display:grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         margin-top:50px;
+         margin-bottom:90px;
+       }
+       .list1,.list2,.list3{
+         list-style-type: none;
+       }
+       .skill-set ul li{
+         font-size: 1.5em;
+         padding:23px;
+         border-bottom:1px solid black;
+         width:85%;
+       }
+       .heading{
+         margin-left:50px;
+       }
+       .hr-solution{
+         height:450px;
+         background-image: url("images/service-hand.jpg");
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+       }
+       .hr-solution h2{
+         padding:90px 0 0 100px;
+       }
+       .hr-solution h4{
+         padding:20px 0 0 100px;
+       }
+       .solution-button{
+         margin:40px 0 0 100px;
+       }
+       .it-solution{
+         height:450px;
+         background-image: url("images/service-man.jpg");
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         margin-top:-28px;
+        
+       }
+       .it-solution h2{
+         padding:70px 100px 0 65%;
+       }
+       .it-solution h4{
+         padding:10px 100px 0 65%;
+       }
+       .solution-button2{
+         margin:30px 100px 0 65%;
+       }
+       .find-location{
+         height:400px;
+         background-color: steelblue;
+        margin-top:-28px;
+       }
+       .find-location h2,.find-location h4{
+         padding:30px 0 0px 80px;
+       }
+       .selection-tool{
+         display:flex;
+         margin:30px 30px 0 80px;
+       }
+      .select-it{
+        
+        height:70px; margin-top:4px;
+        
+      }
+      .text-select{
+        width:400px;
+        border:1px solid rgb(201, 185, 185);
+        height: 50px;
+        background-color: whitesmoke;
+      }
+      .browser-default{
+        height:50px;
+        width:250px;
+        margin:0 0 0 5px;
+      }
+      .tool-button .btn{
+        height:50px;
+        background-color: whitesmoke;
+       
+        margin:0 0 0 5px;
+      }  
+      .footer{
+display:grid;
+grid-template-rows: 4fr 1fr;
+background-color: rgb(12, 12, 68);
+
+}
+.footer1{
+display:grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+padding: 25px 60px 15px 60px; 
+}
+.foot1,.foot2,.foot3,.foot4{
+display: flex;
+justify-content: center;
+color:white;
+}
+
+.footer li{
+line-height: 2.2rem;
+}
+.headings{
+color:orange;
+}
+.footer2{
+display:flex;
+color:whitesmoke;
+}
+.footer2 ul{
+display:flex;
+flex-flow: row;
+padding:0 45px 0 70px;
+}
+.footer2-logo{
+  margin: 20px 0 0 100px;
+}
+.footer2-text li a{
+  border-right:1px solid black;
+  padding:0 5px 0 5px;
+  color:whitesmoke !important;
+}
+.footer2-text li{
+  padding:0 5px 0 5px ;
+}
+.footer2-social{
+  margin: 0px 0 0 200px;
+}
+.footer2-social li a{
+  border-right:1px solid black;
+  padding:0 5px 0 5px;
+  color:whitesmoke !important;
+}
+.footer2-social li{
+  padding:0 5px 0 5px ;
+}
+}
+
+</style>
+</head>
+<body>
+<div class="navbar">
+  <input type="checkbox" class="nav-toogle" id="nav-toogle">
+  <label for="nav-toogle">navha</label>
+  <ul class="navi">
+      <li><a href="#">jobs</a></li>
+      <li><a href="#">career resources </a></li>
+      <li><a href="#">staffing and solutions</a></li>
+      <li><a href="#">workforce360</a></li>
+    </ul>
+  <div class="nav">
+    <div class="brand-navs">
+    <h2>LOGO</h2>
+    <ul class="navs1">
+        <li><a href="#">jobs</a></li>
+        <li><a href="#">career resources </a></li>
+        <li><a href="#">staffing and solutions</a></li>
+        <li><a href="#">workforce360</a></li>
+      </ul>
+     
+    </div>
+    <div class="navs-only">
+        <ul class="navs2">
+            <li><a href="#">CONNECT WITH US</a></li>
+            <li><i class="material-icons">search</i></li>
+           </ul>
+    </div>
+    <div class="bottom-navs">
+        <ul class="navs3">
+            <li><a href="#">overview</a></li>
+            <li><a href="#">staffing</a></li>
+            <li><a href="#">consulting and projects</a></li>
+            <li><a href="#">IT outsourcing</a></li>
+            <li><a href="#">workforce solutions</a></li>
+          </ul>
+       </div>
+ </div>
+ <div class="extra-navs"><i>Home / Staffing and Solution</i></div>
+ <div class="big-text"><h1>human-powered staffing.<br>
+    tech-forward solutions.</h1>
+  </div>
+  <div class="learn-more">
+    <div class="more-text"><p>Finding the right person for your business is a crucial decision that hinges<br>
+       on the way you search for, select and interview potential applicants.</p></div>
+    <div class="more-button"><a class="waves-effect waves-light btn">Contact us for more</a></div>
+  </div>
+  </div>
+  <div class="skill-set">
+    <div class="heading"><h3>staffing by skill set</h3></div>
+    <ul class="list1">
+      <li><a href="#">call center</a></li>
+      <li><a href="#">engineering</a></li>
+      <li><a href="#"> finance & accounting</a></li>
+      <li><a href="#"> more...</a></li>
+    </ul>
+    <ul class="list2">
+        <li><a href="#">healthcare</a></li>
+        <li><a href="#">human resources</a></li>
+        <li><a href="#">industrial</a></li>
+    </ul>
+    <ul class="list3">
+        <li><a href="#">IT</a></li>
+        <li><a href="#">marketing</a></li>
+        <li><a href="#">pharma</a></li>
+    </ul>
+  </div>
+  <div class="hr-solution">
+    <h2>HR solutions.</h2>
+    <h4>Randstad has combined innovative HR<br> technology with human insight to power<br> solutions 
+      like onsite management, RPO, and<br> outplacement services.</h4>
+    <div class="solution-button"><a class="waves-effect waves-light btn">Find out more</a></div>
+
+  </div>
+  <div class="it-solution">
+      <h2>IT solutions.</h2>
+      <h4>We take a human approach to<br> technology consulting and deliver <br>solutions for the projects and 
+        <br>challenges your IT organization <br>is facing.</h4>
+      <div class="solution-button2"><a class="waves-effect waves-light btn">learn more</a></div>
+  
+    </div>
+    <div class="slider" id="slide1">
+        <ul class="slides" id="slides1">
+          <li>
+            <img src="images/slider1.jpg" height="100%"> <!-- random image -->
+            <div class="caption center-align">
+              <h1>This is our big Tagline!</h1>
+              <h3 class="light grey-text text-lighten-3">Here's our small slogan.</h3>
+            </div>
+          </li>
+          <li>
+            <img src="images/slider2.jpg"> <!-- random image -->
+            <div class="caption left-align">
+              <h1>Left Aligned Caption</h1>
+              <h3 class="light grey-text text-lighten-3">Here's our small slogan.</h3>
+            </div>
+          </li>
+        
+        
+        </ul>
+      </div>
+
+<div class="find-location">
+  <h2>Find a Location</h2>
+  <h4>Drop in and say "hi" at one of our branch locations.</h4>
+  <div class="selection-tool">
+  <div class="text-select">
+    <input type="text" class="select-it" placeholder="Enter a city,zip">
+  </div>
+     <div class="select1">
+      <select class="browser-default">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+    <div class="select2">
+        <select class="browser-default">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+      </div>
+      <div class="tool-button"><a class="waves-effect waves-light btn"><i class="material-icons">arrow_forward</i></a></div>
+      </div>
+       
+  </div>
+  
+        <div class="footer">
+            <div class="footer1">
+            <div class="foot1"><ul>
+              <li class="headings">ABOUT US</li>
+              <li>Why oracle</li>
+              <li>cOntact</li>
+              <li>Company</li>
+              <li>Customer</li>
+              <li>Partner</li>
+              <li>Resource</li>
+              <li>Careear</li>
+              <li>News and Events</li>
+            </ul></div>
+            <div class="foot2"><ul>
+                <li class="headings">PRODUCT</li>
+                <li>User Data Tier <ul>
+                 <li>User Experence</li>
+                 <li>Multi-TEnant cloud experence</li>
+                 <li>Professional edition</li>
+                
+          </div>
+            <div class="foot3"><ul>
+                <li class="headings">SOLUTION</li>
+                <li>Sale</li>
+                <li>Marketing</li>
+                <li>Supply Chain</li>
+                <li>Operation</li>
+                <li>Finance</li>
+                <li>  Enterprise</li>
+                <li>Big data</li>
+                <li>Embeded Analytic</li>
+              </ul></div>
+            <div class="foot4"><ul>
+                <li class="headings">SERVICES</li>
+                <li>Value based design</li>
+                <li>6 key to sucess</li>
+                <li>Costumer Sucess Team</li>
+                <li>Oracle University</li>
+             
+              </ul></div>
+              </div>
+              <div class="footer2">
+                <div class="footer2-logo">© randstad USA</div>
+                <div class="footer2-text">
+                  <ul>
+                    <li><a href="#">randstad holding </a></li>
+                    <li><a href="#">terms of service</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer2-social">
+                    <ul>
+                        <li><a href="#">fa</a></li>
+                        <li><a href="#">twit</a></li>
+                        <li><a href="#">insta</a></li>
+                        </ul>
+                </div>
+                </div>      
+    
+   
+  </div>
+                
+   <!--Import jQuery before materialize.js-->
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script>
+ $(document).ready(function(){
+      $('.slider').slider();
+      $('#slide1').height(500);
+     
+      $('.slides').height(500);
+      $('.slider').indicators(false);
+      
+    $('select').formSelect();
+  
+
+    });
+
+</script>
+</body>
+</html>

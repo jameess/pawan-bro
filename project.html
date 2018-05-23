@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+     <title>oracle</title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <style>
+        html{
+          font-size: 16px;
+        }
+        h1{
+          font-size: 3rem;
+       
+        }
+        h2{
+         font-size: 2.4em
+        }
+        h3{
+          font-size: 1.8rem;
+        }
+        h4{
+          font-size: 1.3rem;
+        }
+        p{
+          font-size: 2.4rem;
+          font-size: 1rem;
+        }
+        a{
+          color: black !important;
+        }
+        nav{
+          background-color:#F2F0DA !important;
+          z-index: 3;
+     
+        }
+       
+        .side-nav{
+          background-color: black !important;
+         
+         
+        }
+        .side-nav li a{
+          color:white !important;
+        }
+        @media screen and (max-width:1050px) {
+          html{
+          font-size: 15px;
+        }
+        
+        
+  
+    .brand-logo{
+          
+          display:flex;
+          justify-content: center;
+          align-items: center;
+           }
+           
+        a:hover{
+           color:tomato !important;
+            }
+            
+        
+
+        #nav-mobile {
+  display:none;
+ }
+
+  .bottom-nav{
+     background-color:rgb(73, 71, 71) !important;
+     width: 100%;
+    color:whitesmoke;
+    position: fixed;
+     height:30px;
+     
+
+   }
+
+   .b-nav{
+   margin-left:75%;
+  height:100%;
+     list-style-type: none;
+    
+      
+   }
+
+   .bottom-dropdown{
+     display:none;
+      background-color:rgb(223, 210, 210) !important;
+      margin-top: 5px;
+      width:250px;
+      margin-left :-120px;
+      position: absolute;
+   
+   }
+   .bottom-dropdown li{
+     text-align: center;
+   }
+   .b-nav:hover  .bottom-dropdown{
+     display:block;
+   }
+   .services{
+     margin-top: 30px;
+     height:400px;
+     background-image: url("images/slider3.jpg");
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+
+   }
+   .services h2{
+     padding:50px 20px 0 30px;
+     color: wheat;
+   }
+    .services p{
+      padding:0 10 0 30px;
+      color:white;
+    }
+    .project-grid{
+  
+  }
+    .project-grid1{
+      
+      margin:15px 10px 10px 20px;
+    }
+    .project-grid1 h3{
+      padding:10px;
+    }
+    .project-grid2 .p2-image{
+      text-align: center;
+      padding:20px;
+    }
+    .project-grid2 h4{
+      padding-left:20px;
+    }
+    .pg-list ul{
+   list-style-type: none;
+   padding-left:20px;
+    }
+    .pg-list ul li{
+       padding:10px;
+    }
+    .select{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      
+      }
+      .select1{
+        margin:0 10px 20px 45px;
+        width:80%;
+        
+      }
+      .select2{
+        width:80%;
+        margin:0 10px 20px 25px;
+      }
+      .browser-default{
+        border:1px solid rgb(138, 133, 133);
+        margin-left:20px;
+      }
+      .forms .button-submit{
+        margin:-30px 0 50px 50%;
+      }
+      .footer{
+       background-color: rgb(59, 55, 49);
+       color:whitesmoke;
+     
+     }
+     .footer1{
+      display: flex;
+      justify-content:center;
+      align-items: center;
+  flex-direction: column;
+    
+    
+     }
+     .footer1 ul li a{
+       color:whitesmoke !important;
+     }
+     .footer ul li{
+       text-align: center;
+     }
+    
+     
+     .social{
+       padding:80px 0 0 80px;
+     }
+     .g1,.g2{
+       padding-top:20px;
+     }
+     .footer2{
+       margin: 30px 40px 40px 80px;
+     }
+     .footer2 p{
+       font-size: 14px;
+     }
+   
+
+
+  }
+        @media screen and (min-width:1150px) {
+      
+       
+        .brand-logo{
+          
+          margin:1px 0 0 80px;
+           }
+     
+        a:hover{
+           color:tomato !important;
+            }
+            .toogle:checked ~ .dropdown1{
+              display: block;
+            }
+            .toogle:checked ~ .dropdown2{
+              display: block;
+            }
+            .toogle:checked ~ .dropdown3{
+              display: block;
+            }
+            .toogle:checked ~ .toogle-label{
+              display: flex;
+              flex-direction: row;
+            }
+           .toogle-label{
+            font-size:18px;
+            padding-left:15px;
+            color: black;
+          
+            }
+#nav-mobile {
+  margin-right:60px;
+ }
+ #navs{
+  width:120px;
+  text-align: center;
+ }
+ .dropdown{
+   display: flex;
+   flex-direction: row;
+   
+ }
+ .dropdown1{
+   margin: 80px 0 0 -950px;
+ 
+   color:rgb(104, 87, 87);
+   display:none;
+ }
+ .dropdown1 li,.dropdown2 li,.dropdown3 li{
+   text-align: center;
+ width:100%;
+ }
+ .dropdown1 h4,.dropdown2 h4,.dropdown3 h4{
+ color: orange;
+ }
+ .dropdown2{
+  margin: 80px 0 0 180px;
+   
+   color:rgb(104, 87, 87);
+   display:none;
+ }
+ .dropdown3{
+  margin: 80px 0 0 180px;
+ 
+   color:rgb(104, 87, 87);
+   display:none;
+ }
+   .bottom-nav{
+     background-color:rgb(73, 71, 71) !important;
+     
+    color:whitesmoke;
+   
+     height:30px;
+
+   }
+
+   .b-nav{
+   margin-left:85%;
+     list-style-type: none;
+      position: absolute;
+      
+   }
+
+   .bottom-dropdown{
+     display:none;
+      background-color:rgb(223, 210, 210) !important;
+      margin-top: 5px;
+      width:300px;
+      margin-left:-120px;
+      position: absolute;
+   
+   }
+   .bottom-dropdown li{
+     text-align: center;
+   }
+   .b-nav:hover  .bottom-dropdown{
+     display:block;
+   }
+   .services{
+     margin-top: -30px;
+     height:500px;
+     background-image: url("images/slider3.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+
+   }
+   .services h2{
+     padding:110px 0 0 110px;
+     color: wheat;;
+   }
+    .services p{
+      padding:0 0 0 110px;
+      color:white;
+    }
+    .project-grid{
+    display:grid;
+    grid-template-columns: 1.5fr 1fr;
+  
+    }
+    .project-grid1{
+      
+      margin:15px 30px 0px 60px;
+    }
+    .project-grid1 h3{
+      padding:10px;
+    }
+    .project-grid2 .p2-image{
+      text-align: center;
+      padding:20px;
+    }
+    .project-grid2 h4{
+      padding-left:25px;
+    }
+    .pg-list ul{
+   list-style-type: none;
+   padding-left:50px;
+    }
+    .pg-list ul li{
+       padding:10px;
+    }
+    .select{
+      display:flex;
+      
+      }
+      .select1{
+        padding:0px 20px 20px 50px;
+        width:220px;
+        
+      }
+      .select2{
+        width:180px;
+        padding:0 0 0 15px;
+      }
+      .browser-default{
+        border:1px solid rgb(138, 133, 133);
+        margin-left:20px;
+      }
+      .forms .button-submit{
+        margin:-30px 0 50px 150px;
+      }
+      .footer{
+       background-color: rgb(59, 55, 49);
+       color:whitesmoke;
+       height:350px;
+     }
+     .footer1{
+      display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    
+     }
+     .footer1 ul li a{
+       color:whitesmoke !important;
+     }
+     .social{
+       padding:80px 0 0 80px;
+       
+     }
+     .g1,.g2{
+       padding-top:20px;
+     }
+     .footer2{
+       margin: 30px 40px 40px 80px;
+     }
+     .footer2 p{
+       font-size: 14px;
+     }
+
+
+        }
+
+</style>
+</head>
+<body>
+  <div class="navbar-fixed"> 
+    <nav class="nav-extended">
+       
+         <div class="nav-wrapper">
+           <a href="#" class="brand-logo">Logo</a>
+           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+           <ul id="nav-mobile" class="right hide-on-med-and-down">
+             <li id="navs"><a href="#">services</a></li>
+             <li id="navs"><a href="#">Industries</a></li>
+             <li id="navs"><a href="#">IT career</a></li>
+             <li id="navs"><a href="#">Contact</a></li>
+             <li class="dropdown" id="navs"> 
+               <label for="nav-toogle" class="toogle-label">more</label>
+               <input type="checkbox" class="toogle" id="nav-toogle">
+                <ul class="dropdown1">
+                  <h4>Discover TEKsystems</h4>
+                   <li><a href="#">TEKsystems Services</a></li>
+                   <li><a href="#">Contact</a></li>
+                   <li><a href="#"> About TEKsystems</a></li>
+                   <li><a href="#">Locations</a></li>
+                   <li><a href="#">TEKsavvy® Blog</a></li>
+                 </ul>
+                <ul class="dropdown2">
+                  <h4>Resources</h4>
+                   <li><a href="#"> Research</a></li>
+                   <li><a href="#">Case Studies</a></li>
+                   <li><a href="#">Thought Leadership</a></li>
+                   <li><a href="#">Infographic Library</a></li>
+                   <li><a href="#">Video Library</a></li>
+                </ul>
+                <ul class="dropdown3">
+                  <h4>Outreach</h4>
+                   <li><a href="#">News and Press</a></li>
+                 
+                </ul>
+
+             </li>
+             <li id="navs"><a href="#"><i class="material-icons">search</i></a></li>
+             </ul>
+             </div>
+             </nav>
+             </div>
+             <div class="bottom-nav">
+             <li class="b-nav">it services
+               <ul class="bottom-dropdown">
+                 <li><a href="#">IT Services</a></li>
+                 <li><a href="#"> Applications Services</a></li>
+                 <li><a href="#">  Infrastructure Services</a></li>
+                 <li><a href="#">Learning Solutions</a></li>
+                 <li><a href="#">Global Delivery Network</a></li>
+                 <li><a href="#">Project Governance</a></li>
+                 <li><a href="#"> Technology Partnerships</a></li>
+              </ul>
+             </li>
+             </div>
+             <div class="services">
+               <h2>IT SERVICES</h2>
+               <p>Superior business performance and competitive advantage depend on knowing<br> how to capitalize on IT to accomplish desired outcomes.
+                  To achieve business<br> targets 
+                 on time, within budget and according to quality standards, leaders must <br>pay close attention to the fundamentals:
+                  knowing which methods work and<br> which people do IT best.</p>
+             </div>
+   <div class="project-grid">
+     <div class="project-grid1">
+       <h3>
+          Every year TEKsystems partners with more than 6,000 clients. 
+          Every week, we speak with over 100,000 IT professionals about their key initiatives and career goals.</h3>
+     <p>Our connections within the IT workforce provide us with a real-world pulse on what works, how to improve IT operations and how to 
+         assemble the best people to help your business achieve its goals. As an IT services company we leverage our unique
+          perspective within our clients' organizations and our massive TEKsystems network to deliver proven IT services that
+          not only work in theory but also where it matters most: in practice.</p>
+       <p>By assuming ownership for outcomes, our global IT services leverage our IT talent management expertise to extend the value of our 
+          client partnerships and deliver measurable business outcomes.</p>
+      <div class="pg-list">
+        <h3>TEKsystems Global Services Practice Areas</h3>
+        <ul>
+          <li><a href="#">APPLICATIONS SERVICES
+            </a></li>
+          <li><a href="#">INFRASTRUCTURE SERVICES</a></li>
+         <li><a href="#"> LEARNING SOLUTIONS</a></li>
+        </ul>
+      
+      </div>
+      <h3>TEKsystems Managed IT Services</h3>
+      <p>In addition to project-based and outsourcing services, we provide Managed IT Services for applications and infrastructure needs. 
+        Our Managed IT Services offer a scalable delivery model to help you achieve your business objectives. 
+        Through this model, we manage a team of high-performance resources that can be customized based on your needs. We also define, 
+        streamline and optimize how resources
+         accomplish in-scope work outcomes to lower your total cost of ownership and achieve higher levels of performance through defined SLAs.</p>
+
+     </div>
+     <div class="project-grid2">
+       <div class="p2-image"><img src="images/roleimage.jpeg" height="200px" width="300px"></div>
+       <h4>Send us Message</h4>
+       <div class="forms">
+        
+  <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">First Name*</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_telephone" type="tel" class="validate">
+            <label for="icon_telephone">Last Name*</label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">school</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">Company*</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">email</i>
+              <input id="icon_telephone" type="tel" class="validate">
+              <label for="icon_telephone">Email*</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">add_location</i>
+                <input id="icon_prefix" type="text" class="validate">
+                <label for="icon_prefix">Address line1*</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">add_location</i>
+                <input id="icon_telephone" type="tel" class="validate">
+                <label for="icon_telephone">Address line2*</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="select">
+        <div class="select1">
+            <select class="browser-default">
+                <option value="" disabled selected>City*</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+            </div>
+            <div class="select2">
+                <select class="browser-default">
+                    <option value="" disabled selected>State*</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <i class="material-icons prefix">code</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Zip code*</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="icon_telephone" type="tel" class="validate">
+                        <label for="icon_telephone">Telephone*</label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="select">
+                    <div class="select1">
+                        <select class="browser-default">
+                            <option value="" disabled selected>Country*</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                        </div>
+                        <div class="select2">
+                            <select class="browser-default">
+                                <option value="" disabled selected>what i need</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="row">
+                              <form class="col s12">
+                                <div class="row">
+                                  <div class="input-field col s12">
+                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Comment</label>
+                                  </div>
+                                </div>
+                              </form>
+                             
+                            </div>
+                           <div class="button-submit"> <a class="waves-effect waves-light btn">SUBMIT</a></div>
+       </div>
+     </div>
+   </div>
+   <div class="footer">
+      <div class="footer1">
+    <div class="social">
+      <i class="material-icons">search</i>
+      <i class="material-icons">search</i> 
+      <i class="material-icons">search</i> 
+      <i class="material-icons">search</i> 
+      <i class="material-icons">search</i> 
+    </div>
+    <div class="g1">
+      <ul>
+        <li><a href="#">  Contact</a></li>
+        <li><a href="#"> TEKsavvy® Blog</a></li>
+        <li><a href="#">  About TEKsystems</a></li>
+        <li><a href="#">Internal Careers</a></li>
+        <li><a href="#"> Locations</a></li>
+       </ul></div>
+    <div class="g2"><ul>
+        <li><a href="#">  Mandatory Notices</a></li>
+        <li><a href="#"> Privacy Policy</a></li>
+        <li><a href="#">  Terms and Conditions</a></li>
+        <li><a href="#">Internal Careers</a></li>
+        <li><a href="#"> Site Map</a></li>
+       </ul></div>
+    </div>
+    <div class="footer2">
+      <p>COPYRIGHT © 2018 TEKSYSTEMS INC., ALL RIGHTS RESERVED.</p>
+      <p><i>From FORTUNE Magazine, March 15, 2017 © 2017 Time Inc. FORTUNE and FORTUNE 100 Best Companies to Work For are registered tr
+         Time Inc. and are used under license. FORTUNE and Time Inc. are not affiliated with, and do not endorse products or services 
+         of TEKsystems.</i></p>
+    </div>
+    </div>
+    
+    
+    
+
+               <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+      
+      $(document).ready(function() {
+    $('input#input_text, textarea#textarea2').characterCounter();
+    $('select').formSelect();
+  });
+   </script>
+</body>
+</html>

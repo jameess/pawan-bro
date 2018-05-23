@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+     <title>oracle</title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <style>
+        html{
+          font-size: 16px;
+        }
+        h1{
+          font-size: 3rem;
+       
+        }
+        h2{
+         font-size: 2.4em
+        }
+        h3{
+          font-size: 1.8rem;
+        }
+        h4{
+          font-size: 1.3rem;
+        }
+        p{
+          font-size: 2.4rem;
+          font-size: 1rem;
+        }
+        a{
+          color: black !important;
+        }
+        nav{
+          background-color:#F2F0DA !important;
+          z-index: 3;
+     
+        }
+       
+        .side-nav{
+          background-color: black !important;
+         
+         
+        }
+        .side-nav li a{
+          color:white !important;
+        }
+        @media screen and (max-width:700px) {
+          html{
+          font-size: 13px;
+        }
+        }
+        
+   @media screen and (max-width:1150x){
+    .brand-logo{
+          
+          display:flex;
+          justify-content: center;
+          align-items: center;
+           }
+           
+        a:hover{
+           color:tomato !important;
+            }
+        
+     }   
+        @media screen and (min-width:1150px) {
+      
+       
+        .brand-logo{
+          
+          margin:1px 0 0 80px;
+           }
+     
+        a:hover{
+           color:tomato !important;
+            }
+            .toogle:checked ~ .dropdown1{
+              display: block;
+            }
+            .toogle:checked ~ .dropdown2{
+              display: block;
+            }
+            .toogle:checked ~ .dropdown3{
+              display: block;
+            }
+            .toogle:checked ~ .toogle-label{
+              display: flex;
+              flex-direction: row;
+            }
+           .toogle-label{
+            font-size:18px;
+            padding-left:15px;
+            color: black;
+          
+            }
+#nav-mobile {
+  margin-right:60px;
+ }
+ #navs{
+  width:120px;
+  text-align: center;
+ }
+ .dropdown{
+   display: flex;
+   flex-direction: row;
+   
+ }
+ .dropdown1{
+   margin: 80px 0 0 -950px;
+ 
+   color:rgb(104, 87, 87);
+   display:none;
+ }
+ .dropdown1 li,.dropdown2 li,.dropdown3 li{
+   text-align: center;
+ width:100%;
+ }
+ .dropdown1 h4,.dropdown2 h4,.dropdown3 h4{
+ color: orange;
+ }
+ .dropdown2{
+  margin: 80px 0 0 180px;
+   
+   color:rgb(104, 87, 87);
+   display:none;
+ }
+ .dropdown3{
+  margin: 80px 0 0 180px;
+ 
+   color:rgb(104, 87, 87);
+   display:none;
+ }
+        }
+
+
+   @media screen and (max-width:1149px) {
+
+
+ .tips{
+  
+ 
+   background-image: url("images/tips.jpg");
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   
+ }
+ .tips-text{
+  border:1px solid black;
+
+  color: white;
+ }
+ .tips-extra{
+
+   
+  
+   border:1px solid black;
+   background-color: whitesmoke;
+   opacity: 0.9;
+   }
+   
+  .icon1,.icon2,.icon3{
+    height:120px;
+  }
+   .icon1:hover,.icon2:hover,.icon3:hover{
+background-color: rgb(44, 40, 40);
+color:white;
+opacity: 0.8;
+   }
+ .icon1 i,.icon2 i,.icon3 i{
+   font-size: 80px;
+   padding: 30px 30px 0 30px;
+   
+}
+.icon1 h4,.icon2 h4,.icon3 h4{
+  padding:0px 0 0 35%;
+  margin-top:-65px;
+ }
+ .it-role{
+  
+ 
+ }
+.role-text{
+ 
+  padding: 30px 15px 0px 45px;
+}
+.role-image{
+  padding: 10px 15px 15px 45px;
+
+}
+.all-news{
+border: 1px solid black;
+background-color: rgb(77, 73, 69);
+color: whitesmoke;
+
+}
+.all-news h4{
+margin-top: 30px;
+margin-left: 60px;
+}
+  .latest-news{
+   
+ 
+   
+    margin: 10px 15px 10px 55px;
+     }
+     .news1,.news2,.news3{
+       display:flex;
+      
+       
+       align-items: center;
+     }
+     .news-image{
+       padding:20px 25px 0 10px; 
+     }
+    
+     .texts{
+      
+       padding:40px 0px 0 40px;
+     }
+     .videos{
+      border:1px solid black; 
+      margin:50px;
+     }
+     .footer{
+       background-color: rgb(59, 55, 49);
+       color:whitesmoke;
+     
+     }
+     .footer1{
+      display: flex;
+      justify-content:center;
+      align-items: center;
+  flex-direction: column;
+    
+    
+     }
+     .footer1 ul li a{
+       color:whitesmoke !important;
+     }
+     .footer ul li{
+       text-align: center;
+     }
+    
+     
+     .social{
+       padding:80px 0 0 80px;
+     }
+     .g1,.g2{
+       padding-top:20px;
+     }
+     .footer2{
+       margin: 30px 40px 40px 80px;
+     }
+     .footer2 p{
+       font-size: 14px;
+     }
+
+
+
+   }
+           @media screen and (min-width:1150px) {
+
+ .tips{
+   height:480px;
+   display:grid;
+   grid-template-columns: 2fr 1fr;
+   background-image: url("images/tips.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+ }
+ .tips-text{
+  border:1px solid black;
+  display: flex;
+justify-content: center;
+  align-items: center;
+  color: white;
+ }
+ .tips-extra{
+   display:grid;
+   grid-template-rows: 1fr 1fr 1fr;
+   height:100%;
+   width:86%;
+   border:1px solid black;
+   background-color: whitesmoke;
+   opacity: 0.9;
+   }
+   
+  
+   .icon1:hover,.icon2:hover,.icon3:hover{
+background-color: rgb(44, 40, 40);
+color:white;
+opacity: 0.8;
+   }
+ .icon1 i,.icon2 i,.icon3 i{
+   font-size: 80px;
+   padding: 30px 30px 0 30px;
+}
+.icon1 h4,.icon2 h4,.icon3 h4{
+  padding:0px 0 0 35%;
+  margin-top:-65px;
+ }
+
+ .it-role{
+   height:250px;
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+ }
+.role-text{
+ 
+  padding: 30px 15px 15px 45px;
+}
+.role-image{
+  padding: 30px 15px 15px 45px;
+}
+.all-news{
+border: 1px solid black;
+background-color: rgb(77, 73, 69);
+color: whitesmoke;
+
+}
+.all-news h4{
+margin-top: 30px;
+}
+  .latest-news{
+    height:230px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+    margin: 10px 45px 30px 45px;
+     }
+     .news1,.news2,.news3{
+       display:flex;
+      
+       justify-content: center;
+       align-items: center;
+     }
+     .news-image{
+       padding:20px 25px 0 10px; 
+     }
+     .video-text{
+      display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    height:350px;
+   
+     }
+     .texts{
+      
+       padding:80px 0px 0 80px;
+     }
+     .videos{
+      border:1px solid black; 
+      margin:50px;
+     }
+     .footer{
+       background-color: rgb(59, 55, 49);
+       color:whitesmoke;
+       height:350px;
+     }
+     .footer1{
+      display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    
+     }
+     .footer1 ul li a{
+       color:whitesmoke !important;
+     }
+     .social{
+       padding:80px 0 0 80px;
+       
+     }
+     .g1,.g2{
+       padding-top:20px;
+     }
+     .footer2{
+       margin: 30px 40px 40px 80px;
+     }
+     .footer2 p{
+       font-size: 14px;
+     }
+
+}
+</style>
+
+</head>
+<body>
+    <div class="navbar-fixed"> 
+       <nav class="nav-extended">
+          
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo">Logo</a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li id="navs"><a href="#">services</a></li>
+                <li id="navs"><a href="#">Industries</a></li>
+                <li id="navs"><a href="#">IT career</a></li>
+                <li id="navs"><a href="#">Contact</a></li>
+                <li class="dropdown" id="navs"> 
+                  <label for="nav-toogle" class="toogle-label">more</label>
+                  <input type="checkbox" class="toogle" id="nav-toogle">
+                   <ul class="dropdown1">
+                     <h4>Discover TEKsystems</h4>
+                      <li><a href="#">TEKsystems Services</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#"> About TEKsystems</a></li>
+                      <li><a href="#">Locations</a></li>
+                      <li><a href="#">TEKsavvy® Blog</a></li>
+                    </ul>
+                   <ul class="dropdown2">
+                     <h4>Resources</h4>
+                      <li><a href="#"> Research</a></li>
+                      <li><a href="#">Case Studies</a></li>
+                      <li><a href="#">Thought Leadership</a></li>
+                      <li><a href="#">Infographic Library</a></li>
+                      <li><a href="#">Video Library</a></li>
+                   </ul>
+                   <ul class="dropdown3">
+                     <h4>Outreach</h4>
+                      <li><a href="#">News and Press</a></li>
+                    
+                   </ul>
+
+                </li>
+                <li id="navs"><a href="#"><i class="material-icons">search</i></a></li>
+                </ul>
+                </div>
+                </nav>
+                </div>
+      <div class="tips">
+        <div class="tips-text"><h2>The most common tips to<br> making a succesful onboarding <br>program</h2></div>
+        <div class="tips-extra">  
+
+
+ <div class="icon1"> <i class="material-icons">search</i><h4> i need<br> <span> A Job</span></h4></div>
+ <div class="icon2"> <i class="material-icons">search</i><h4> i am looking<br> <span>For Talent</span></h4></div>
+  <div class="icon3"> <i class="material-icons">search</i><h4> i have <br><span> A Project</span></h4></div>
+
+        </div>
+      </div>
+              
+
+<div class="it-role">
+  <div class="role-text"><h3>Our People Make IT Possible</h3>
+    <p>People are at the heart of every successful business initiative
+    . At TEKsystems, a leading provider of IT staffing and IT services, we understand people. Every year we deploy over 80,000 IT 
+    professionals at 6,000 client sites across
+     North America, Europe and Asia. Our deep insights into the IT 
+     labor market enable us to help clients achieve their business goals—while optimizing their IT workforce strategies.</p></div>
+  <div class="role-image"><image src="images/roleimage.jpeg" height="200px"></image></div>
+</div>
+<div class="all-news">
+<h4>The latest news from TEKsavvy</h4>
+<div class="latest-news">
+   <div class="news1">
+   
+    <div class="news-image"><image src="images/roleimage.jpeg" height="150px" width="140px"></image></div>
+    <div class="news-text"><h4>IT jobs of the week</h4>
+      <p>See this week's highlighted<br> information technology jobs across the U.S.</p>
+      <i class="material-icons">search</i> READ
+    </div>
+  </div>
+ <div class="news2"><div class="news-image"><image src="images/roleimage.jpeg" height="150px" width="140px"></image></div>
+ <div class="news-text"><h4>IT jobs of the week</h4>
+   <p>See this week's highlighted<br> information technology jobs across the U.S.</p>
+   <i class="material-icons">search</i> READ
+ </div></div>
+ <div class="news3">
+    <div class="news-image"><image src="images/roleimage.jpeg" height="150px" width="140px"></image></div>
+    <div class="news-text"><h4>IT jobs of the week</h4>
+      <p>See this week's highlighted<br> information technology jobs across the U.S.</p>
+      <i class="material-icons">search</i> READ
+    </div>
+ </div>
+</div>
+</div>
+<div class="video-text">
+  <div class="texts"><h3>News and Resources</h3>
+  <ul> <li>PRESS RELEASE /<a href="#">2018 IT Forecast</a></li>
+  <li>RESEARCH /<a href="#">Check out what IT leaders expect for 2018 </a></li>
+  </ul>
+  </div>
+  <div class="videos"><video src=""></video></div>
+</div>
+<div class="footer">
+  <div class="footer1">
+<div class="social">
+  <i class="material-icons">search</i>
+  <i class="material-icons">search</i> 
+  <i class="material-icons">search</i> 
+  <i class="material-icons">search</i> 
+  <i class="material-icons">search</i> 
+</div>
+<div class="g1">
+  <ul>
+    <li><a href="#">  Contact</a></li>
+    <li><a href="#"> TEKsavvy® Blog</a></li>
+    <li><a href="#">  About TEKsystems</a></li>
+    <li><a href="#">Internal Careers</a></li>
+    <li><a href="#"> Locations</a></li>
+   </ul></div>
+<div class="g2"><ul>
+    <li><a href="#">  Mandatory Notices</a></li>
+    <li><a href="#"> Privacy Policy</a></li>
+    <li><a href="#">  Terms and Conditions</a></li>
+    <li><a href="#">Internal Careers</a></li>
+    <li><a href="#"> Site Map</a></li>
+   </ul></div>
+</div>
+<div class="footer2">
+  <p>COPYRIGHT © 2018 TEKSYSTEMS INC., ALL RIGHTS RESERVED.</p>
+  <p><i>From FORTUNE Magazine, March 15, 2017 © 2017 Time Inc. FORTUNE and FORTUNE 100 Best Companies to Work For are registered tr
+     Time Inc. and are used under license. FORTUNE and Time Inc. are not affiliated with, and do not endorse products or services 
+     of TEKsystems.</i></p>
+</div>
+</div>
+
+
+
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+      
+      
+   
+        $(document).ready(function(){
+       $(".button-collapse").sideNav();
+     
+     });
+     </script>
+       </body>
+       </html>

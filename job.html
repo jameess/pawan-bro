@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+     <title>oracle</title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <style>
+        html{
+          font-size: 16px;
+        }
+        h1{
+          font-size: 3rem;
+       
+        }
+        h2{
+         font-size: 2.4em
+        }
+        h3{
+          font-size: 1.8rem;
+        }
+        h4{
+          font-size: 1.3rem;
+        }
+        p{
+          font-size: 2.4rem;
+          font-size: 1rem;
+        }
+        a{
+          color: black !important;
+        }
+
+
+@media screen and (min-width:801px) {
+   
+   .navbar{
+          background-color: steelblue;
+          height:630px;
+        }
+        .nav{
+          display:grid;
+          grid-template-columns: 3fr 1fr;
+          margin:-40px 0 0 50px;;
+         
+        }
+        .navs1,.navs2,.navs3{
+          list-style-type: none;
+          display: flex;
+          
+        }
+        .brand-navs{
+        border-bottom: 2px solid whitesmoke;
+       
+          display:flex;
+          margin:0px 0 0 50px;
+            }
+            .brand-navs h2{
+            
+            }
+            .navs-only{
+              border-bottom: 2px solid whitesmoke;
+              margin:10px 50px 0 0px;
+          display:flex;
+          align-items:center;
+       
+            }
+        .navs1{
+          margin:30px 0 0 30px;
+        }
+        .navs1 li,.navs2 li,.navs3 li{
+          padding: 12px;
+        }
+        .bottom-navs{
+          margin:0px 0 0 40px;
+        }
+        .extra-navs{
+          margin:-10px 0 0 100px;
+        }
+        .big-text h1{
+          margin:80px 0 80px 120px;
+          font-size: 75px !important;
+          color:whitesmoke;
+        }
+        .big-text .h1-gap{
+          margin:0px 0 0 400px;
+          font-size: 75px;
+        }
+       .learn-more{
+         display:grid;
+         grid-template-columns: 3fr 1fr;
+         margin:10px 30px 0px 80px;
+       }
+       .navi{
+       display: none;
+        
+       }
+       .nav-toogle{
+      
+       }
+      .navbar label{
+      opacity:0;
+       }
+      .job-select{
+        display:grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        height:100px;
+        margin:25px 30px 15px 35px;
+        border-bottom:1px solid rgb(202, 191, 191);
+      }
+      .job-rank h4{
+         padding:25px 0 0 60px;
+      }
+      .job-select .browser-default{
+        width:35%;
+        border: 1px solid rgb(187, 180, 180);
+      }
+      .job-page{
+        justify-content: center;
+        align-items: center;
+        display:flex;
+      }
+      .job-sort{
+        
+        align-items: center;
+        display:flex;
+      }
+      .job-sort h4{
+        padding-right:10px;
+      }
+      .job-page h4{
+        padding-right:10px;
+      }
+      .main-job{
+        display:grid;
+        grid-gap: 50px;
+        grid-template-columns: 1fr 2.3fr;
+        margin:5px 80px 20px 80px;
+      }
+      .side-job{
+       
+      }
+      .main-body{
+       
+      }
+      .body-desc,.body-desc1,.body-desc2,.body-desc3,.body-desc4,.body-desc5,.body-desc6,.body-desc7,.body-desc8,.body-desc9,.body-desc10{
+        display:grid;
+      border-bottom: 1px solid rgba(216, 201, 201, 0.87);
+        grid-template-columns: 2fr 1fr;
+     
+        margin:5px 0 10px 0;
+    
+      }
+      .view-button{
+        padding:90px 0 0 80px;
+      }
+      .side-job .browser-default{
+        width:95%;
+        margin-bottom: 20px;
+      }
+      .side-job .row{
+        padding:5px;
+      
+       margin-bottom:-10px;
+      }
+     .sidejob-button {
+        margin-left: 80px;
+     }
+     .job-catog,.job-type,.state,.speciality{
+       border-bottom:1px solid rgba(204, 190, 190, 0.664);
+     }
+     .catog-drops{
+       display:none;
+     }
+     .catog-toogle{
+       color:black !important;
+     
+     }
+     .job-catog label{
+       color: black !important;
+       font-size: 30px;
+       display:flex;
+     }
+     .job-catog .material-icons{
+       padding:17px 0 0 30px;
+       font-size: 40px;
+     }
+     .job-catog .catog-toogle:checked ~ .catog-drops{
+       display: block;
+     }
+     .job-catog .closes{
+       display: none;
+     }
+     .job-catog .catog-toogle:checked ~ label .closes{
+       display:block;
+     }
+     .catog-drops1{
+       display:none;
+     }
+     .catog-toogle1{
+       color:black !important;
+     
+     }
+     .job-type label{
+       color: black !important;
+       font-size: 30px;
+       display:flex;
+     }
+     .job-type .material-icons{
+       padding:17px 0 0 30px;
+       font-size: 40px;
+     }
+     .job-type .catog-toogle1:checked ~ .catog-drops1{
+       display: block;
+     }
+     .job-type  .closes{
+       display: none;
+     }
+     .job-type .catog-toogle1:checked ~ label .closes{
+       display:block;
+     }
+     .catog-drops2{
+       display:none;
+     }
+     .catog-toogle2{
+       color:black !important;
+     
+     }
+     .state label{
+       color: black !important;
+       font-size: 30px;
+       display:flex;
+     }
+     .state .material-icons{
+       padding:17px 0 0 30px;
+       font-size: 40px;
+     }
+     .state .catog-toogle2:checked ~ .catog-drops2{
+       display: block;
+     }
+     .state .closes{
+       display: none;
+     }
+     .state .catog-toogle2:checked ~ label .closes{
+       display:block;
+     }
+     .catog-drops3{
+       display:none;
+     }
+     .catog-toogle3{
+       color:black !important;
+     
+     }
+     .speciality label{
+       color: black !important;
+       font-size: 30px;
+       display:flex;
+     }
+     .speciality .material-icons{
+       padding:17px 0 0 30px;
+       font-size: 40px;
+     }
+     .speciality .catog-toogle3:checked ~ .catog-drops3{
+       display: block;
+     }
+     .speciality .closes{
+       display: none;
+     }
+     .speciality .catog-toogle3:checked ~ label .closes{
+       display:block;
+     }
+     .pagination{
+       text-align: center;
+       margin:25px 0 30px 0;
+     }
+
+
+}
+
+@media screen and (min-width:300px) and (max-width:800px){
+      .navbar{
+          background-color: steelblue;
+        padding-bottom: 30px;
+        }
+        .nav{
+     
+     }
+
+        .navs1,.navs2,.navs3{
+       display:none;   
+        }
+        .brand-navs{
+        border-bottom: 2px solid whitesmoke;
+       text-align: center;
+     margin-top:-70px;
+            }
+            .navs-only{
+            display: none;
+       
+            }
+       .extra-navs{
+         display:none;
+       }
+       .nav-toogle:checked ~ .navi{
+      display:block;
+       }
+        
+        .big-text{
+          margin:90px 0 30px 50px;
+        }
+       .learn-more{
+        
+         margin:40px 30px 20px 20px;
+       }
+       .navi{
+       display:none;
+       position: absolute;
+       width:100%;
+       background-color: rgb(43, 37, 37);margin-top:25px;
+   
+         }
+         .navi li{
+           text-align: center
+         }
+         .navi li:hover{
+          background-color: black;
+          font-size:18px;
+         }
+         .navi li a{
+          color:whitesmoke !important;
+         }
+       label{
+      position:absolute;
+      margin:35px 15px 0 -20px;
+      color: navy;
+       }
+       input[type=checkbox]{
+         margin-top:-100px;
+         color:yellow !important;
+       }
+       .job-select{
+      display:none;
+      }
+  
+
+
+ .main-job{
+      
+        margin:5px 20px 25px 25px;
+      }
+      .side-job{
+       
+      }
+      .main-body{
+       
+      }
+      .body-desc{
+        display:grid;
+      border-bottom: 1px solid rgba(216, 201, 201, 0.87);
+        grid-template-columns: 3fr 1fr;
+     
+        margin:83px 0 15px 0;
+    
+      }
+      }
+      .body-desc1,.body-desc2,.body-desc3,.body-desc4,.body-desc5,.body-desc6,.body-desc7,.body-desc8,.body-desc9,.body-desc10{
+        display:grid;
+      border-bottom: 1px solid rgba(216, 201, 201, 0.87);
+        grid-template-columns: 3fr 1fr;
+     
+        margin:23px 0 15px 0;
+    
+      }
+      .view-button{
+        padding:110px 0 0 80px;
+      }
+      .side-job .browser-default{
+        width:95%;
+        margin-bottom: 20px;
+      }
+      .side-job .row{
+        padding:5px;
+      
+       margin-bottom:-10px;
+      }
+     .sidejob-button {
+        margin-left: 80px;
+     }
+     .job-catog,.job-type,.state,.speciality{
+       border-bottom:1px solid #ccbebea9;
+       padding:30px 10px 35px 5px;
+     }
+     .catog-drops{
+       display:none;
+   
+       margin-top:100px;
+       margin-bottom: -50px;
+       width:90%;
+       background-color: rgb(216, 216, 216);
+       z-index: 3;
+     }
+     .catog-drops li{
+       padding:10px;
+     }
+     .catog-toogle{
+       color:black !important;
+     
+     }
+     .job-catog label{
+       color: black !important;
+       font-size: 30px;
+       display:flex;
+     }
+     .job-catog .material-icons{
+       padding:17px 0 0 30px;
+       font-size: 40px;
+     }
+     .job-catog .catog-toogle:checked ~ .catog-drops{
+       display: block;
+     }
+     .job-catog .closes{
+       display: none;
+     }
+     .job-catog .catog-toogle:checked ~ label .closes{
+       display:block;
+     }
+     .catog-drops1{
+      display:none;
+   
+   margin-top:100px;
+   margin-bottom: -50px;
+   width:90%;
+   background-color: rgb(216, 216, 216);
+   z-index: 3;
+     }
+     .catog-drops1 li{
+       padding:10px;
+     }
+     .catog-toogle1{
+       color:black !important;
+     
+     }
+     .job-type label{
+       color: black !important;
+       font-size: 30px;
+       display:flex;
+     }
+     .job-type .material-icons{
+       padding:17px 0 0 30px;
+       font-size: 40px;
+     }
+     .job-type .catog-toogle1:checked ~ .catog-drops1{
+       display: block;
+     }
+     .job-type  .closes{
+       display: none;
+     }
+     .job-type .catog-toogle1:checked ~ label .closes{
+       display:block;
+     }
+     .catog-drops2{
+      display:none;
+   
+   margin-top:100px;
+   margin-bottom: -50px;
+   width:90%;
+   background-color: rgb(216, 216, 216);
+   z-index: 3;
+     }
+     .catog-drops2 li{
+       padding:10px;
+     }
+     .catog-toogle2{
+       color:black !important;
+     
+     }
+     .state label{
+       color: black !important;
+       font-size: 30px;
+       display:flex;
+     }
+     .state .material-icons{
+       padding:17px 0 0 30px;
+       font-size: 40px;
+     }
+     .state .catog-toogle2:checked ~ .catog-drops2{
+       display: block;
+     }
+     .state .closes{
+       display: none;
+     }
+     .state .catog-toogle2:checked ~ label .closes{
+       display:block;
+     }
+     .catog-drops3{
+      display:none;
+   
+   margin-top:100px;
+   margin-bottom: -50px;
+   width:90%;
+   background-color: rgb(216, 216, 216);
+   z-index: 3;
+     }
+     .catog-drops3 li{
+       padding:10px;
+     }
+     .catog-toogle3{
+       color:black !important;
+     
+     }
+     .speciality label{
+       color: black !important;
+       font-size: 30px;
+       display:flex;
+     }
+     .speciality .material-icons{
+       padding:17px 0 0 30px;
+       font-size: 40px;
+     }
+     .speciality .catog-toogle3:checked ~ .catog-drops3{
+       display: block;
+     }
+     .speciality .closes{
+       display: none;
+     }
+     .speciality .catog-toogle3:checked ~ label .closes{
+       display:block;
+     }
+     .pagination{
+       text-align: center;
+       margin:25px 0 30px 0;
+     }
+
+
+
+
+
+}
+
+
+
+
+
+   
+     
+     
+
+</style>
+  </head>
+  <body>
+  <div class="navbar">
+    <input type="checkbox" class="nav-toogle" id="nav-toogle">
+    <label for="nav-toogle"><img src="images/hamburg.png" height="50px" width="50px"></label>
+    <ul class="navi">
+        <li><a href="#">jobs</a></li>
+        <li><a href="#">career resources </a></li>
+        <li><a href="#">staffing and solutions</a></li>
+        <li><a href="#">workforce360</a></li>
+      </ul>
+    <div class="nav">
+      <div class="brand-navs">
+      <h2>LOGO</h2>
+      <ul class="navs1">
+          <li><a href="#">jobs</a></li>
+          <li><a href="#">career resources </a></li>
+          <li><a href="#">staffing and solutions</a></li>
+          <li><a href="#">workforce360</a></li>
+        </ul>
+       
+      </div>
+      <div class="navs-only">
+          <ul class="navs2">
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Create Account</a></li>
+              <li><i class="material-icons">search</i></li>
+             </ul>
+      </div>
+      <div class="bottom-navs">
+          <ul class="navs3">
+              <li><a href="#">Search job</a></li>
+              <li><a href="#">Job Notification</a></li>
+            
+            </ul>
+         </div>
+   </div>
+   <div class="extra-navs"><i>Home / Job / Search</i></div>
+   <div class="big-text"><h1>Analytics jobs.<br>
+     <span class="h1-gap">in the united states.</span> </h1>
+    </div>
+    <div class="learn-more">
+      <div class="more-text"><h4>JOB:1000</h4></div>
+      <div class="more-button"><a class="waves-effect waves-light btn">Contact us for more</a></div>
+    </div>
+    </div>
+ <div class="job-select">
+   <div class="job-rank"><h4>jobs 1 to 10 of 1000</h4></div>
+   <div class="job-page">
+     <h4>job per page</h4>
+    <select class="browser-default">
+          <option  disabled selected>10</option>
+          <option value="1">10</option>
+          <option value="1">20</option>
+          <option value="2">25</option>
+          
+          </select>
+      </div>
+   
+   <div class="job-sort">
+     <h4>Sort by</h4>
+    
+      <select class="browser-default">
+            <option value="" disabled selected>Relevance</option>
+            <option value="1">Relevance</option>
+            <option value="1">date</option>
+          
+            </select>
+   </div>
+ </div>
+  
+      <div class="main-job">
+        <div class="side-job">
+          <h3>new search</h3>
+        
+        <div class="row">
+            <div class="input-field col s12">
+              <input value="Analytics" id="first_name2" type="text" class="validate">
+               </div>
+          </div>
+          <div class="row">
+              <div class="input-field col s12">
+                <input value= "location" id="first_name2" type="text" class="validate">
+                 </div>
+            </div>
+            <select class="browser-default">
+                <option  disabled selected>mile radius</option>
+                <option value="1">10 mile</option>
+                <option value="1">20 mile</option>
+                <option value="2">25 mile</option>
+                
+                </select>
+                <div class="sidejob-button"><a class="waves-effect waves-light btn">Search</a></div>
+                <div class="side-search">
+                  <h3>Refine your search</h3>
+                  <div class="job-catog">
+                      
+                     <label for="catog-toogle"><h3>Job category</h3>
+                      <i class="material-icons" id="adds">expand_more</i></label>
+                      <input type="checkbox" class="catog-toogle" id="catog-toogle">
+    
+                     <ul class="catog-drops">
+                      <li><a href="#">Accounting & Auditing (1)</a></li>
+                      <li><a href="#">Accounting and Finance (1)</a></li>
+                      <li><a href="#"> Architecture and Engineering Occupations (16)</a></li>
+                      <li><a href="#">Arts, Design, Entertainment, Sports, and Media Occupations (4)</a></li>
+                      <li><a href="#">Biotechnology & Pharmaceutical (81)</a></li>
+                      <li><a href="#">Building and Grounds Cleaning and Maintenance Occupations (8)</a></li>
+                      <li><a href="#">Business and Financial Operations Occupations (285)</a></li>
+                      <li><a href="#">Computer and Mathematical </a></li>
+                    </ul>
+                </div>
+                  <div class="job-type">
+                      <label for="catog-toogle1"><h3>Job type</h3>
+                        <i class="material-icons" id="adds">expand_more</i></label>
+                        <input type="checkbox" class="catog-toogle1" id="catog-toogle1">
+      
+                       <ul class="catog-drops1">
+                        <li><a href="#">Accounting & Auditing (1)</a></li>
+                        <li><a href="#">Accounting and Finance (1)</a></li>
+                        <li><a href="#"> Architecture and Engineering Occupations (16)</a></li>
+                        <li><a href="#">Arts, Design, Entertainment, Sports, and Media Occupations (4)</a></li>
+                        <li><a href="#">Biotechnology & Pharmaceutical (81)</a></li>
+                        <li><a href="#">Building and Grounds Cleaning and Maintenance Occupations (8)</a></li>
+                        <li><a href="#">Business and Financial Operations Occupations (285)</a></li>
+                        <li><a href="#">Computer and Mathematical </a></li>
+                      </ul>
+                  </div>
+                  <div class="state">
+                    <label for="catog-toogle2"><h3>State</h3>
+                      <i class="material-icons" id="adds">expand_more</i></label>
+                      <input type="checkbox" class="catog-toogle2" id="catog-toogle2">
+    
+                     <ul class="catog-drops2">
+                      <li><a href="#">Accounting & Auditing (1)</a></li>
+                      <li><a href="#">Accounting and Finance (1)</a></li>
+                      <li><a href="#"> Architecture and Engineering Occupations (16)</a></li>
+                      <li><a href="#">Arts, Design, Entertainment, Sports, and Media Occupations (4)</a></li>
+                      <li><a href="#">Biotechnology & Pharmaceutical (81)</a></li>
+                      <li><a href="#">Building and Grounds Cleaning and Maintenance Occupations (8)</a></li>
+                   
+                    </ul>
+                  </div>
+                  <div class="speciality">
+
+                    <label for="catog-toogle3"><h3>Speciality</h3>
+                      <i class="material-icons" id="adds">expand_more</i></label>
+                      <input type="checkbox" class="catog-toogle3" id="catog-toogle3">
+    
+                     <ul class="catog-drops3">
+                      <li><a href="#">Accounting & Auditing (1)</a></li>
+                      <li><a href="#">Accounting and Finance (1)</a></li>
+                      <li><a href="#"> Architecture and Engineering Occupations (16)</a></li>
+                      <li><a href="#">Arts, Design, Entertainment, Sports, and Media Occupations (4)</a></li>
+                  
+                    </ul>
+
+                  </div>
+                </div>
+              
+          </div>
+        <div class="main-body">
+          <div class="body-desc">
+             <div class="body-text">
+                 <h2>Marketing Analytics Specialist</h2>
+                 <h4>location: Rancho Cordova, CA<br>
+                    job type: Contract<br>
+                    date posted: Wednesday, May 30, 2018
+              
+                    </h4>
+              </div>
+             <div class="view-button">
+                 <a class="waves-effect waves-light btn-large">view job</a>
+             </div>
+         </div>
+         <div class="body-desc1">
+            <div class="body-text">
+                <h2>Marketing Analytics Specialist</h2>
+                <h4>location: Rancho Cordova, CA<br>
+                   job type: Contract<br>
+                   date posted: Wednesday, May 30, 2018
+             
+                   </h4>
+             </div>
+            <div class="view-button">
+                <a class="waves-effect waves-light btn-large">view job</a>
+            </div>
+        </div>
+        <div class="body-desc1">
+            <div class="body-text">
+                <h2>Marketing Analytics Specialist</h2>
+                <h4>location: Rancho Cordova, CA<br>
+                   job type: Contract<br>
+                   date posted: Wednesday, May 30, 2018
+             
+                   </h4>
+             </div>
+            <div class="view-button">
+                <a class="waves-effect waves-light btn-large">view job</a>
+            </div>
+        </div>
+        <div class="body-desc2">
+            <div class="body-text">
+                <h2>Marketing Analytics Specialist</h2>
+                <h4>location: Rancho Cordova, CA<br>
+                   job type: Contract<br>
+                   date posted: Wednesday, May 30, 2018
+             
+                   </h4>
+             </div>
+            <div class="view-button">
+                <a class="waves-effect waves-light btn-large">view job</a>
+            </div>
+        </div>
+        <div class="body-desc3">
+            <div class="body-text">
+                <h2>Marketing Analytics Specialist</h2>
+                <h4>location: Rancho Cordova, CA<br>
+                   job type: Contract<br>
+                   date posted: Wednesday, May 30, 2018
+             
+                   </h4>
+             </div>
+            <div class="view-button">
+                <a class="waves-effect waves-light btn-large">view job</a>
+            </div>
+        </div>
+        <div class="body-desc4">
+            <div class="body-text">
+                <h2>Marketing Analytics Specialist</h2>
+                <h4>location: Rancho Cordova, CA<br>
+                   job type: Contract<br>
+                   date posted: Wednesday, May 30, 2018
+             
+                   </h4>
+             </div>
+            <div class="view-button">
+                <a class="waves-effect waves-light btn-large">view job</a>
+            </div>
+        </div>
+        <div class="body-desc5">
+            <div class="body-text">
+                <h2>Marketing Analytics Specialist</h2>
+                <h4>location: Rancho Cordova, CA<br>
+                   job type: Contract<br>
+                   date posted: Wednesday, May 30, 2018
+             
+                   </h4>
+             </div>
+            <div class="view-button">
+                <a class="waves-effect waves-light btn-large">view job</a>
+            </div>
+        </div>
+        <div class="body-desc6">
+            <div class="body-text">
+                <h2>Marketing Analytics Specialist</h2>
+                <h4>location: Rancho Cordova, CA<br>
+                   job type: Contract<br>
+                   date posted: Wednesday, May 30, 2018
+             
+                   </h4>
+             </div>
+            <div class="view-button">
+                <a class="waves-effect waves-light btn-large">view job</a>
+            </div>
+        </div>
+        <div class="body-desc7">
+            <div class="body-text">
+                <h2>Marketing Analytics Specialist</h2>
+                <h4>location: Rancho Cordova, CA<br>
+                   job type: Contract<br>
+                   date posted: Wednesday, May 30, 2018
+             
+                   </h4>
+             </div>
+            <div class="view-button">
+                <a class="waves-effect waves-light btn-large">view job</a>
+            </div>
+        </div>
+        <div class="body-desc8">
+            <div class="body-text">
+                <h2>Marketing Analytics Specialist</h2>
+                <h4>location: Rancho Cordova, CA<br>
+                   job type: Contract<br>
+                   date posted: Wednesday, May 30, 2018
+             
+                   </h4>
+             </div>
+            <div class="view-button">
+                <a class="waves-effect waves-light btn-large">view job</a>
+            </div>
+        </div>
+        <div class="body-desc9">
+            <div class="body-text">
+                <h2>Marketing Analytics Specialist</h2>
+                <h4>location: Rancho Cordova, CA<br>
+                   job type: Contract<br>
+                   date posted: Wednesday, May 30, 2018
+             
+                   </h4>
+             </div>
+            <div class="view-button">
+                <a class="waves-effect waves-light btn-large">view job</a>
+            </div>
+        </div>
+        <div class="body-desc10">
+            <div class="body-text">
+                <h2>Marketing Analytics Specialist</h2>
+                <h4>location: Rancho Cordova, CA<br>
+                   job type: Contract<br>
+                   date posted: Wednesday, May 30, 2018
+             
+                   </h4>
+             </div>
+            <div class="view-button">
+                <a class="waves-effect waves-light btn-large">view job</a>
+            </div>
+        </div>
+        <div class="body-desc10">
+            <div class="body-text">
+                <h2>Marketing Analytics Specialist</h2>
+                <h4>location: Rancho Cordova, CA<br>
+                   job type: Contract<br>
+                   date posted: Wednesday, May 30, 2018
+             
+                   </h4>
+             </div>
+            <div class="view-button">
+                <a class="waves-effect waves-light btn-large">view job</a>
+            </div>
+        </div>
+        </div>
+     </div>
+
+     <ul class="pagination">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+      </ul>
+
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+ <script>
+  $(document).ready(function(){
+    
+       
+     $('select').formSelect();
+   
+ 
+     });
+ 
+ </script>
+ </body>
+ </html>  
